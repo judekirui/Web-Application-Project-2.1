@@ -1,0 +1,203 @@
+/* =========================================================
+   P&M Heavy Equipment - Site Styles
+   Color tokens pulled from brand color scheme
+   ========================================================= */
+
+:root {
+  --color-white: #ffffff;
+  --color-white-90: #ffffffe6;
+  --color-light-gray: #f3f3f3;
+  --color-primary: #23577d;
+  --color-primary-dark: #1a4360;
+  --color-overlay: #00000099;
+  --color-black: #000000;
+  --color-text-dark: #2b2b2b;
+  --color-text-gray: #808080;
+}
+
+body {
+  color: var(--color-text-dark);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+/* ---------- Navbar ---------- */
+.site-navbar {
+  background-color: var(--color-primary);
+}
+
+.site-navbar .navbar-brand {
+  color: var(--color-white);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.site-navbar .nav-link {
+  color: var(--color-white-90);
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link.active {
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+/* ---------- Buttons ---------- */
+.btn-brand {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-brand:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.btn-brand-outline {
+  background-color: transparent;
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.btn-brand-outline:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+/* ---------- Hero (home page, supports a background image) ---------- */
+.hero {
+  position: relative;
+  background-color: var(--color-primary); /* fallback if no image is set */
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-overlay);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+  color: var(--color-white);
+}
+
+.hero p {
+  color: var(--color-white-90);
+}
+
+/* ---------- Page banner (about / contact headers) ---------- */
+.page-banner {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 70px 0;
+  text-align: center;
+}
+
+.page-banner p {
+  color: var(--color-white-90);
+}
+
+/* ---------- Section helpers ---------- */
+.section {
+  padding: 70px 0;
+}
+
+.section-gray {
+  background-color: var(--color-light-gray);
+}
+
+.section-title {
+  margin-bottom: 40px;
+}
+
+.text-muted-custom {
+  color: var(--color-text-gray);
+}
+
+/* ---------- Cards / icon boxes ---------- */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.stat-number {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.image-placeholder {
+  background-color: var(--color-light-gray);
+  color: var(--color-text-gray);
+  border: 1px dashed var(--color-text-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ---------- Call to action banner ---------- */
+.cta-banner {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* ---------- Forms ---------- */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.2rem rgba(35, 87, 125, 0.25);
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background-color: var(--color-black);
+  color: var(--color-white-90);
+  padding: 50px 0 20px;
+}
+
+.site-footer h5 {
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+.site-footer a {
+  color: var(--color-white-90);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.site-footer .footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 20px;
+  color: var(--color-text-gray);
+  font-size: 0.875rem;
+}

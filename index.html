@@ -1,23 +1,131 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home page</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
 
- <div id="navbar"></div>
+<body>
 
-    <div class="container">
-        <h1>Welcome</h1>
-    </div>
+    <div id="navbar"></div>
 
+    <section class="hero" style="background-image: url('images/hero-placeholder.jpg');">    <!--BACKGROUND IMAGE-->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="nav.js"></script>
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Heavy Equipment. Reliable Power.</h1>
+            <p class="lead">P&amp;M leases cranes and heavy machinery to keep construction projects of every size moving
+                on schedule.</p>
+            <div class="mt-4">
+                <a href="contact.html" class="btn btn-brand btn-lg me-2">Request a Quote</a>
+                <a href="about.html" class="btn btn-brand-outline btn-lg">About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT WE DO -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center section-title">
+                <h2 class="fw-bold">What We Do</h2>
+                <p class="text-muted-custom">Equipment and support for every stage of your project</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="icon-circle">1</div>
+                    <h5>Equipment Leasing</h5>
+                    <p class="text-muted-custom">Cranes, excavators, and heavy-lift units available for short or
+                        long-term leasing.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-circle">2</div>
+                    <h5>Project Support</h5>
+                    <p class="text-muted-custom">Experienced operators and logistics planning so your job site stays on
+                        track.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-circle">3</div>
+                    <h5>Safety First</h5>
+                    <p class="text-muted-custom">Certified, well-maintained equipment backed by strict safety standards.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US / STATS -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <div class="stat-number">20+</div>
+                    <p class="text-muted-custom mb-0">Years in Business</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-number">150+</div>
+                    <p class="text-muted-custom mb-0">Equipment Units</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-number">500+</div>
+                    <p class="text-muted-custom mb-0">Projects Completed</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-number">24/7</div>
+                    <p class="text-muted-custom mb-0">Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2 class="fw-bold">Ready to start your project?</h2>
+            <p class="mb-4">Tell us what you need and we'll get the right equipment on site.</p>
+            <a href="contact.html" class="btn btn-brand-outline btn-lg">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5>P&amp;M Heavy Equipment</h5>
+                    <p class="text-muted-custom">Construction and heavy-lift equipment leasing you can rely on.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-muted-custom">
+                        <li>123 Industrial Way, Your City</li>
+                        <li>(555) 123-4567</li>
+                        <li>info@pmheavyequipment.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                &copy; 2026 P&amp;M Heavy Equipment. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="nav.js"></script>
 
 </body>
+
 </html>
