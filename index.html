@@ -14,15 +14,14 @@
 
     <div id="navbar"></div>
 
-    <section class="hero" style="background-image: url('images/hero-placeholder.jpg');">    <!--BACKGROUND IMAGE-->
+    <section class="hero" style="background-image: url('images/hero-placeholder.jpg');"> <!--BACKGROUND IMAGE-->
 
         <div class="container text-center">
             <h1 class="display-4 fw-bold">Heavy Equipment. Reliable Power.</h1>
             <p class="lead">P&amp;M leases cranes and heavy machinery to keep construction projects of every size moving
                 on schedule.</p>
             <div class="mt-4">
-                <a href="contact.html" class="btn btn-brand btn-lg me-2">Request a Quote</a>
-                <a href="about.html" class="btn btn-brand-outline btn-lg">About Us</a>
+                <a href="about.html" class="lead" class="btn btn-brand-outline btn-lg">About Us</a>
             </div>
         </div>
     </section>
@@ -57,7 +56,7 @@
         </div>
     </section>
 
-    <!-- WHY CHOOSE US / STATS -->
+    <!-- WHY CHOOSE US -->
     <section class="section section-gray">
         <div class="container">
             <div class="row text-center g-4">
@@ -81,14 +80,67 @@
         </div>
     </section>
 
-    <!-- CTA -->
+    <!-- Contact Banner -->
     <section class="cta-banner">
         <div class="container">
-            <h2 class="fw-bold">Ready to start your project?</h2>
-            <p class="mb-4">Tell us what you need and we'll get the right equipment on site.</p>
-            <a href="contact.html" class="btn btn-brand-outline btn-lg">Contact Us</a>
+            <div class="container text-center">
+                <h2 class="fw-bold">Ready to start your project?</h2>
+                <p class="mb-4">Tell us what you need and we'll get the right equipment on site.</p>
+                <a type="button" class="btn btn-brand-outline btn-lg" data-bs-toggle="modal"
+                    data-bs-target="#contactModal">
+                    Contact Us
+                </a>
+            </div>
         </div>
     </section>
+
+    <!-- CONTACT FORM MODAL -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fw-bold fs-4" id="contactModalLabel">Request a Quote</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="equipment" class="form-label">Equipment Needed</label>
+                                <select class="form-select" id="equipment">
+                                    <option selected>Select an option</option>
+                                    <option>Crane Rental</option>
+                                    <option>Excavator</option>
+                                    <option>Heavy Hauling</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Project Details</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Tell us about your project, timeline, and location"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send Request</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <div id="footer"></div>
