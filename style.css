@@ -66,7 +66,7 @@ a {
   color: var(--color-primary);
 }
 
-/*  Hero (supports a background image)    */
+/*  Hero (supports a background image)   */
 .hero {
   position: relative;
   background-color: var(--color-primary); /* fallback if no image is set */
@@ -149,10 +149,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   min-height: 280px;
   text-align: center;
   font-style: italic;
+
 }
+
+/*.img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+}*/
 
 /*  Call to action banner  */
 .cta-banner {
