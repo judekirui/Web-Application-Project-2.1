@@ -12,6 +12,7 @@ services.html – Services offered
 fleet.html – Equipment catalog
 projects.html – Past project portfolio
 contact.html – Contact form and quote requests
+faq.html
 
 Built With:
 HTML5
