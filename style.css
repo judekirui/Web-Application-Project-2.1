@@ -21,7 +21,7 @@ a {
   color: var(--color-primary);
 }
 
-/* ---------- Navbar ---------- */
+/*  Navbar  */
 .site-navbar {
   background-color: var(--color-black);
 }
@@ -42,7 +42,7 @@ a {
   font-weight: 600;
 }
 
-/* ---------- Buttons ---------- */
+/*  Buttons  */
 .btn-brand {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
@@ -66,7 +66,7 @@ a {
   color: var(--color-primary);
 }
 
-/* ---------- Hero (home page, supports a background image) ---------- */
+/*  Hero (supports a background image)    */
 .hero {
   position: relative;
   background-color: var(--color-primary); /* fallback if no image is set */
@@ -92,7 +92,7 @@ a {
   color: var(--color-white-90);
 }
 
-/* ---------- Page banner (about / contact headers) ---------- */
+/*  Page banner */
 .page-banner {
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -104,7 +104,7 @@ a {
   color: var(--color-white-90);
 }
 
-/* ---------- Section helpers ---------- */
+/*  Section helpers   */
 .section {
   padding: 70px 0;
 }
@@ -121,7 +121,7 @@ a {
   color: var(--color-text-gray);
 }
 
-/* ---------- Cards / icon boxes ---------- */
+/*  Cards / icon boxes   */
 .icon-circle {
   width: 60px;
   height: 60px;
@@ -143,9 +143,9 @@ a {
 }
 
 .image-placeholder {
-  background-color: var(--color-light-gray);
+  background-color: var(--color-white);
   color: var(--color-text-gray);
-  border: 1px dashed var(--color-text-gray);
+  /* border: 1px dashed var(--color-text-gray); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,7 +154,7 @@ a {
   font-style: italic;
 }
 
-/* ---------- Call to action banner ---------- */
+/*  Call to action banner  */
 .cta-banner {
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -162,14 +162,14 @@ a {
   text-align: center;
 }
 
-/* ---------- Forms ---------- */
+/*  Forms    */
 .form-control:focus,
 .form-select:focus {
   border-color: var(--color-primary);
   box-shadow: 0 0 0 0.2rem rgba(35, 87, 125, 0.25);
 }
 
-/* ---------- Footer ---------- */
+/*  Footer   */
 .site-footer {
   background-color: var(--color-black);
   color: var(--color-white-90);
