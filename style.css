@@ -23,7 +23,7 @@ a {
 
 /* ---------- Navbar ---------- */
 .site-navbar {
-  background-color: var(--color-primary);
+  background-color: var(--color-black);
 }
 
 .site-navbar .navbar-brand {
