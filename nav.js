@@ -5,6 +5,12 @@ fetch('nav.html')
     highlightCurrentPage();
   });
 
+fetch('footer.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('footer').innerHTML = html;
+  });
+
 function highlightCurrentPage() {
   const current = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('#navbar .nav-link').forEach(link => {

@@ -11,11 +11,10 @@ about.html – Company history
 services.html – Services offered
 fleet.html – Equipment catalog
 projects.html – Past project portfolio
-safety.html – Safety standards and certifications
 contact.html – Contact form and quote requests
 
 Built With:
 HTML5
 CSS3
-JavaScript 
+JavaScript
 Bootstrap
